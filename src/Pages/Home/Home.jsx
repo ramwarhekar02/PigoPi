@@ -104,7 +104,7 @@ const HomePage = () => {
         </Canvas>
       </div>
 
-      <div className="top-20 left-0 w-full h-screen " />
+      <div className="relative top-20 left-0 w-full h-screen " />
       <div className="absolute w-full h-screen inset-0 flex flex-col items-center justify-center text-white text-center px-4 z-10 pointer-events-none">
         <h1 className="text-[11vw] font-extrabold tracking-wide font-[Host_Grotesk] text-center">
           PigoPi
