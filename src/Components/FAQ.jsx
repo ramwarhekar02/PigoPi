@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqData = [
   {
     question: "What services does a web design company offer?",
-    answer: "A web design company typically provides services such as website design, website development, UI/UX design, branding, SEO optimization, e-commerce solutions, and website maintenance. At Delishush, we offer comprehensive digital solutions tailored to your specific needs."
+    answer: "A web design company typically provides services such as website design, website development, UI/UX design, branding, SEO optimization, e-commerce solutions, and website maintenance. At Pigopi, we offer comprehensive digital solutions tailored to your specific needs."
   },
   {
     question: "How much does it cost to hire a web design company?",
@@ -16,7 +16,7 @@ const faqData = [
   },
   {
     question: "What should I look for when choosing a web design company?",
-    answer: "Look for experience, portfolio quality, technical expertise, communication style, client testimonials, and post-launch support. Delishush offers all these qualities along with transparent communication and dedicated project management."
+    answer: "Look for experience, portfolio quality, technical expertise, communication style, client testimonials, and post-launch support. Pigopi offers all these qualities along with transparent communication and dedicated project management."
   },
   {
     question: "Do web design companies offer ongoing support and maintenance?",
