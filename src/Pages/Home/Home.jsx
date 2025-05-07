@@ -89,17 +89,23 @@ const HomePage = () => {
         {/* 3D Canvas */}
         <Canvas
           className='pointer-events-none touch-none'
-          camera={{ position: [0, 0, 6], fov: 45 }}>
+          camera={{ position: [0, 0, 6], fov: 45 }}
+        >
           <Lights />
           <Lightning />
           <Earth />
-          <OrbitControls enableZoom={false} autoRotate autoRotateSpeed={0.25} />
+          <OrbitControls
+            enableZoom={false}
+            autoRotate
+            autoRotateSpeed={0.25}
+            touches={{ rotate: 0, pan: 0, zoom: 0 }}
+          />
           <Stars radius={100} depth={50} count={5000} factor={4} fade />
         </Canvas>
       </div>
 
       <div className="top-20 left-0 w-full h-screen " />
-      <div className="absolute inset-0 flex flex-col items-center justify-center text-white text-center px-4 z-10 pointer-events-none">
+      <div className="absolute w-full h-screen inset-0 flex flex-col items-center justify-center text-white text-center px-4 z-10 pointer-events-none">
         <h1 className="text-[11vw] font-extrabold tracking-wide font-[Host_Grotesk] text-center">
           PigoPi
         </h1>

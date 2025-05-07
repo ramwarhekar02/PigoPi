@@ -95,7 +95,7 @@ const Services = () => {
               viewport={{ once: true, amount: 0.2 }}
             >
               <a
-                href="/contact"
+                href="#contact"
                 className="inline-block bg-white text-black px-6 py-3 rounded-full font-[Host_Grotesk] text-lg font-semibold shadow-md hover:shadow-xl transition-all duration-300 hover:scale-105"
               >
                 Launch Now
@@ -146,10 +146,10 @@ const Services = () => {
 
       {/* Final Section */}
       <motion.div
-        className="bg-black text-white px-10 py-30"
+        className="bg-black text-white px-6 sm:px-10 py-20 sm:py-30"
         variants={fadeInUp}
         viewport={{ once: true, amount: 0.2 }}
-      >
+      >     
         <motion.div
           className="w-full flex items-center justify-center mx-auto max-w-7xl h-[2px]"
           style={{
@@ -159,20 +159,20 @@ const Services = () => {
           viewport={{ once: true, amount: 0.2 }}
         />
 
-        <div className="w-full max-w-7xl mx-auto grid md:grid-cols-2 gap-12 mt-40 z-10">
+        <div className="w-full max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12 mt-20 sm:mt-40 z-10">
           {/* Left Text */}
           <motion.div
             variants={fadeInLeft}
             className="flex flex-col justify-between"
             viewport={{ once: true, amount: 0.2 }}
           >
-            <h1 className="text-4xl font-semibold leading-tight bg-gradient-to-r from-white to-blue-500 bg-clip-text text-transparent">
-            Elevate Your Online<br />
-            Identity with Innovative<br />
-            Website Solutions
+            <h1 className="text-3xl sm:text-4xl font-semibold leading-tight bg-gradient-to-r from-white to-blue-500 bg-clip-text text-transparent">
+              Elevate Your Online<br />
+              Identity with Innovative<br />
+              Website Solutions
             </h1>
             <div
-              className="w-lg h-[2px] mt-10"
+              className="w-full h-[2px] mt-6 sm:mt-10"
               style={{
                 background: `linear-gradient(to right, rgba(255,255,255,0.5), rgba(255,255,255,0.05), transparent)`
               }}
@@ -182,17 +182,18 @@ const Services = () => {
           {/* Right Image */}
           <motion.div
             variants={fadeInRight}
-            className="rounded-2xl overflow-hidden max-w-full bg-cover h-[50vh] shadow-lg"
+            className="rounded-2xl overflow-hidden bg-cover h-[30vh] sm:h-[50vh] shadow-lg"
             viewport={{ once: true, amount: 0.2 }}
           >
             <img
               src={image13}
               alt="Web design preview"
-              className="w-full h-auto object-cover"
+              className="w-full h-full object-cover"
             />
           </motion.div>
         </div>
       </motion.div>
+
     </motion.div>
   );
 };

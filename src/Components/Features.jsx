@@ -16,14 +16,12 @@ const Features = () => {
   useEffect(() => {
     const images = imageRefs.current.filter(Boolean);
     const isDesktop = window.innerWidth >= 1024;
-  
+
     if (containerRef.current && images.length === 5) {
       const skews = isDesktop ? ['-6deg', '-6deg', '0deg', '6deg', '6deg'] : ['0deg', '0deg', '0deg', '0deg', '0deg'];
       const rotates = isDesktop ? ['-8deg', '-8deg', '0deg', '8deg', '8deg'] : ['0deg', '0deg', '0deg', '0deg', '0deg'];
-      const yOffsets = isDesktop
-        ? ['0vh', '-30vh', '-40vh', '-30vh', '-20vh']
-        : ['0vh', '0vh', '0vh', '0vh', '0vh'];
-  
+      const yOffsets = isDesktop ? ['0vh', '-30vh', '-40vh', '-30vh', '-20vh'] : ['0vh', '0vh', '0vh', '0vh', '0vh'];
+
       images.forEach((img, index) => {
         gsap.set(img, {
           x: '110vw',
@@ -33,7 +31,7 @@ const Features = () => {
           willChange: 'transform',
         });
       });
-  
+
       gsap.to(images, {
         x: 0,
         y: 0,
@@ -52,12 +50,11 @@ const Features = () => {
         },
       });
     }
-  
+
     return () => {
       ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
     };
   }, []);
-  
 
   return (
     <div
