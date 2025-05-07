@@ -16,6 +16,8 @@ import Lightning from '../../Components/Lightning';
 import Earth from '../../Components/Earth';
 import { motion } from 'framer-motion';
 
+// COMMIT CHECK
+
 const services = [
   {
     title: 'Mobile App Development',
