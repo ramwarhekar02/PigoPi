@@ -4,7 +4,7 @@ import App from "../App";
 
 // Lazy loading route components
 const MainHome = lazy(() => import("../Pages/Home/HomePage"));
-const PrivacyPolicy = lazy(() => import("../Pages/Privacy-policy/PrivacyPolicy"));
+const PrivacyPolicy = lazy(() => import("../Pages/Privacy-policy.jsx/PrivacyPolicy"));
 const TermsConditions = lazy(() => import("../Pages/Terms-Conditions/TermsConditions"));
 
 const router = createBrowserRouter([

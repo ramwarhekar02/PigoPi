@@ -46,25 +46,25 @@ const Footer = () => {
           <div className=" order-last md:order-none">
             <h4 className="text-xl font-semibold mb-4">Legal</h4>
             <ul className="space-y-2">
-            <li>
-                <a href="/" className="hover:text-gray-300 transition duration-300">
+              <li>
+                <Link to="/" className="hover:text-gray-300 transition duration-300">
                   Home
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" className="hover:text-gray-300 transition duration-300">
+                <Link to="/" className="hover:text-gray-300 transition duration-300">
                   About
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/privacy-policy" className="hover:text-gray-300 transition duration-300">
+                <Link to="/privacy-policy" className="hover:text-gray-300 transition duration-300">
                   Privacy Policy
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/terms-conditions" className="hover:text-gray-300 transition duration-300">
+                <Link to="/terms-conditions" className="hover:text-gray-300 transition duration-300">
                   Terms &amp; Conditions
-                </a>
+                </Link>
               </li>
               
             </ul>
