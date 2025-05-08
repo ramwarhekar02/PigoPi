@@ -4,7 +4,7 @@ import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 const navItems = [
-  { label: "Home", href: "#home", type: "anchor" },
+  { label: "Home", href: "/", type: "route" },
   { label: "About Us", href: "#about", type: "anchor" },
   { label: "Events", href: "#events", type: "anchor" },
   { label: "Privacy Policy", href: "/privacy-policy", type: "route" },
@@ -19,7 +19,7 @@ const Header = () => {
   const navigate = useNavigate();
 
   useEffect(() => {
-    setMenuOpen(false); // Close menu on route change
+    setMenuOpen(false);
   }, [location]);
 
   useEffect(() => {
@@ -134,7 +134,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="xl:hidden max-w-1/2 h-[100vh] absolute top-[100%] right-0 w-full px-4 py-6 bg-black/80 backdrop-blur-md flex flex-col  items-center space-y-7 text-white">
+        <div className="xl:hidden absolute top-full right-0 w-full h-screen px-4 py-6 bg-black/80 backdrop-blur-md flex flex-col items-center space-y-7 text-white">
           {navItems.map((item, idx) =>
             item.type === "route" ? (
               <Link
