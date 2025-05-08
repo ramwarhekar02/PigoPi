@@ -134,7 +134,7 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <div className="xl:hidden max-w-1/2 h-[100vh] absolute top-[100%] right-0 w-full px-4 py-6 bg-black/80 backdrop-blur-md flex flex-col  items-center space-y-10 text-white">
+        <div className="xl:hidden max-w-1/2 h-[100vh] absolute top-[100%] right-0 w-full px-4 py-6 bg-black/80 backdrop-blur-md flex flex-col  items-center space-y-7 text-white">
           {navItems.map((item, idx) =>
             item.type === "route" ? (
               <Link
