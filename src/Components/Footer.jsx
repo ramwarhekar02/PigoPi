@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import logo1 from '../assets/logo1.png'
 
 const Footer = () => {
   return (
@@ -12,8 +13,8 @@ const Footer = () => {
 
           {/* About Section */}
           <div className="flex-1">
-            <h3 className="text-2xl font-bold mb-4">PigoPi</h3>
-            <p className="text-gray-400">
+            <img className='w-24 h-22' src={logo1} alt="" />
+            <p className="text-gray-400 px-4">
               Elevate your digital presence with cutting-edge web design and development services.
             </p>
           </div>
@@ -27,10 +28,10 @@ const Footer = () => {
               </p>
               <div className="flex flex-col space-y-3">
                 <a
-                  href="mailto:info@pigopi.co.in"
+                  href="mailto:info@pigo-pi.com"
                   className="text-lg text-gray-50 hover:text-white transition"
                 >
-                  info@pigopi.co.in
+                  info@pigo-pi.com
                 </a>
               </div>
               {/* <div
@@ -52,10 +53,15 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/" className="hover:text-gray-300 transition duration-300">
-                  About
+                <Link to="/career" className="hover:text-gray-300 transition duration-300">
+                  Career
                 </Link>
               </li>
+              <li>
+                <Link to="/refund-policy" className="hover:text-gray-300 transition duration-300">
+                  Refund Policy
+                </Link>
+              </li>   
               <li>
                 <Link to="/privacy-policy" className="hover:text-gray-300 transition duration-300">
                   Privacy Policy

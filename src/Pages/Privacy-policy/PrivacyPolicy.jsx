@@ -17,7 +17,7 @@ const PrivacyPolicy = () => {
           <li>Engage with us in other related ways, including any sales, marketing, or events</li>
         </ul>
         <p className="mb-4">
-          Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at info@Pigopi.co.in.
+          Questions or concerns? Reading this privacy notice will help you understand your privacy rights and choices. If you do not agree with our policies and practices, please do not use our Services. If you still have any questions or concerns, please contact us at info@pigo-pi.com
         </p>
 
         <h2 className="text-2xl font-semibold mb-4">SUMMARY OF KEY POINTS</h2>
@@ -126,7 +126,7 @@ const PrivacyPolicy = () => {
           <h4 className="text-lg font-semibold mb-2">Account Information</h4>
           <p className="mb-4">If you would at any time like to review or change the information in your account or terminate your account, you can:</p>
           <p className="mb-4">Upon your request to terminate your account, we will deactivate or delete your account and information from our active databases. However, we may retain some information in our files to prevent fraud, troubleshoot problems, assist with any investigations, enforce our legal terms and/or comply with applicable legal requirements.</p>
-          <p className="mb-4">If you have questions or comments about your privacy rights, you may email us at info@Pigopi.co.in.</p>
+          <p className="mb-4">If you have questions or comments about your privacy rights, you may email us at info@pigo-pi.com</p>
         </section>
 
         <section id="dnt-controls" className="mb-8">
@@ -142,18 +142,18 @@ const PrivacyPolicy = () => {
 
         <section id="contact-notice" className="mb-8">
           <h3 className="text-xl font-semibold mb-4">9. HOW CAN YOU CONTACT US ABOUT THIS NOTICE?</h3>
-          <p className="mb-4">If you have questions or comments about this notice, you may email us at info@Pigopi.co.in or contact us by post at:</p>
+          <p className="mb-4">If you have questions or comments about this notice, you may email us at info@pigo-pi.com or contact us by post at:</p>
           <address>
             Pigopi<br/>
-            0,Near Water Tank,Badaun Road<br/>
-            Bareilly U.P.(243001)<br/>
+            Greater Noida, U.P.(201306)<br/>
             India
+            info@pigo-pi.com
           </address>
         </section>
 
         <section id="review-update-delete" className="mb-8">
           <h3 className="text-xl font-semibold mb-4">10. HOW CAN YOU REVIEW, UPDATE, OR DELETE THE DATA WE COLLECT FROM YOU?</h3>
-          <p className="mb-4">You have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please contact at: info@pigopi.co.in.</p>
+          <p className="mb-4">You have the right to request access to the personal information we collect from you, change that information, or delete it. To request to review, update, or delete your personal information, please contact at: info@pigo-pi.com</p>
         </section>
       </div>
     </div>
