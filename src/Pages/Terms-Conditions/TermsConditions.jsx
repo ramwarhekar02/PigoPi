@@ -9,7 +9,7 @@ const TermsConditions = () => {
   return (
     <div className='w-full bg-black font-[Host_Grotesk] text-white backdrop-blur-xl'>
     <div className="max-w-6xl  mx-auto px-8 py-8">
-      <div className="mb-6 text-sm  md:pt-20 pt-30  text-start">
+      <div className="mb-6 text-sm px-6  md:pt-20 pt-30  text-start">
         <h1 className="text-[5vw]  select-none mb-8 font-extrabold tracking-wide font-[Host_Grotesk] text-center">
             Terms and Conditions
         </h1>
@@ -94,7 +94,7 @@ const TermsConditions = () => {
 
       {/* CONTACT US */}
       <div id="contact-us" className="mb-8 bg-black rounded-lg shadow-md">
-        <h2 className="text-xl font-semibold mb-4 text-white">6. CONTACT US</h2>
+        <h2 className="text-x  font-semibold mb-4 text-white">6. CONTACT US</h2>
         <p className="mb-4">
           In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:
         </p>

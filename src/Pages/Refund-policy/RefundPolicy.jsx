@@ -11,7 +11,7 @@ const RefundPolicy = () => {
     <div className='w-full bg-black font-[Host_Grotesk] text-white backdrop-blur-xl'>
     <div className="max-w-6xl  mx-auto px-8 py-8">
       <div className="mb-6 text-sm  md:pt-20 pt-30 text-start">
-        <h1 className="text-[5vw]  select-none mb-8 font-extrabold tracking-wide font-[Host_Grotesk] text-center">
+        <h1 className="text-[5vw] select-none mb-8 font-extrabold tracking-wide font-[Host_Grotesk] text-center">
             Refund Policy
         </h1>
         Last updated May 5, 2025
@@ -96,7 +96,7 @@ const RefundPolicy = () => {
         </address>
       </div>
       </div>
-      </div>201306
+      </div>
     </div>
   );
 };
