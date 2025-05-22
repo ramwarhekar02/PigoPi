@@ -151,27 +151,40 @@ const HomePage = () => {
             </div> */}
 
             <h2 id="about" className="text-[5vw] font-bold text-center mt-35 mb-15">The Main Goals of our Company</h2>
-            <div className="max-w-7xl text-start mx-auto grid grid-cols-1 md:grid-cols-3 gap-10">
+            <div className="max-w-7xl text-start mx-auto grid grid-cols-1 md:grid-cols-3 gap-10 px-4">
               {aboutData.map((item, index) => (
-                <motion.div
-                  key={index}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.7, delay: index * 0.15 }}
-                  className={`w-full bg-gradient-to-b ${item.gradient} p-6 rounded-3xl text-white`}
-                >
-                  <img
-                    src={item.img}
-                    alt={item.title}
-                    className="w-full h-60 object-cover rounded-2xl mb-4"
-                  />
-                  <h3 className="text-4xl font-bold py-3">{item.title}</h3>
-                  <p className="mt-2 text-xl leading-relaxed">{item.description}</p>
-                </motion.div>
-              ))}
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 60, scale: 0.9, rotateX: 10 }}
+                whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.8, delay: index * 0.2, ease: "easeOut" }}
+                whileHover={{
+                scale: 1.03,
+                rotateZ: 1,
+                boxShadow: "0px 15px 30px rgba(0,0,0,0.25)",
+                transition: { duration: 0.3 },
+              }}
+              className={`w-full bg-gradient-to-b ${item.gradient} p-6 rounded-3xl text-white backdrop-blur-lg bg-opacity-70 shadow-xl hover:shadow-2xl transition-all duration-300`}
+              >
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                transition={{ type: "spring", stiffness: 200 }}
+                className="overflow-hidden rounded-2xl mb-4"
+              >
+              <img
+                src={item.img}
+                alt={item.title}
+                className="w-full h-60 object-cover transition-transform duration-300"
+              />
+            </motion.div>
+              <h3 className="text-4xl font-extrabold py-3 text-white drop-shadow-[0_1.2px_1.2px_rgba(0,0,0,0.8)]">
+            {item.title}
+            </h3>
+              <p className="mt-2 text-lg leading-relaxed text-white/90">{item.description}</p>
+            </motion.div>
+            ))}
             </div>
-
           </div>
         </section>
 
@@ -184,39 +197,51 @@ const HomePage = () => {
             </div>
 
             {/* Right Section Content */}
-            <div className="w-full lg:w-3/5 space-y-8 sm:space-y-10">
-              {[
-                {
-                  title: "Professional Designs",
-                  desc: "A web design company creates unique, tailor-made websites that reflect your brand identity. Unlike generic templates, a custom design sets."
-                },
-                {
-                  title: "User-Friendly",
-                  desc: "With most web traffic coming from mobile devices, a web design company ensures your site is fully responsive and optimized for all screen sizes."
-                },
-                {
-                  title: "SEO Optimization",
-                  desc: "A beautifully designed website is useless if no one can find it. Web design companies incorporate SEO best practices, optimizing your site structure, speed, and content."
-                },
-                {
-                  title: "Faster Loading",
-                  desc: "Slow websites frustrate users and lead to high bounce rates. Professional web designers optimize your site's performance, ensuring fast loading times."
-                }
-              ].map((item, idx) => (
-                <motion.div
-                  key={item.title}
-                  initial={{ opacity: 0, y: 40 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  viewport={{ once: true, amount: 0.2 }}
-                  transition={{ duration: 0.7, delay: idx * 0.15 }}
+          <div className="w-full lg:w-3/5 space-y-8 sm:space-y-10">
+            {[
+              {
+                title: "Professional Designs",
+                desc: "A web design company creates unique, tailor-made websites that reflect your brand identity. Unlike generic templates, a custom design sets."
+              },
+              {
+                title: "User-Friendly",
+                desc: "With most web traffic coming from mobile devices, a web design company ensures your site is fully responsive and optimized for all screen sizes."
+              },
+              {
+                title: "SEO Optimization",
+                desc: "A beautifully designed website is useless if no one can find it. Web design companies incorporate SEO best practices, optimizing your site structure, speed, and content."
+              },
+              {
+                title: "Faster Loading",
+                desc: "Slow websites frustrate users and lead to high bounce rates. Professional web designers optimize your site's performance, ensuring fast loading times."
+              }
+            ].map((item, idx) => (
+              <motion.div
+                key={item.title}
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true, amount: 0.2 }}
+                transition={{ duration: 0.6, delay: idx * 0.2, ease: "easeOut" }}
+                whileHover={{
+                  scale: 1.02,
+                  transition: { duration: 0.3 },
+                }}
+                className="group transition-all duration-300"
+              >
+                <h3 className="text-2xl sm:text-3xl font-semibold text-white group-hover:text-blue-400 transition-colors duration-300">
+                  {item.title}
+                </h3>
+                <motion.p
+                  initial={{ opacity: 0 }}
+                  animate={{ opacity: 1 }}
+                  transition={{ delay: 0.3 + idx * 0.2, duration: 0.5 }}
+                  className="mt-2 text-base sm:text-lg md:text-xl text-gray-300 group-hover:text-gray-200 transition-colors duration-300"
                 >
-                  <h3 className="text-2xl sm:text-3xl font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-base sm:text-lg md:text-xl text-gray-300">
-                    {item.desc}
-                  </p>
-                </motion.div>
-              ))}
-            </div>
+                  {item.desc}
+                </motion.p>
+              </motion.div>
+            ))}
+          </div>
           </div>
         </div>
       </div>

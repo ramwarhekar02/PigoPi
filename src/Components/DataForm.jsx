@@ -23,38 +23,38 @@ const DataForm = () => {
                 <span className="text-white/80">Tell us </span>
                 <span className="text-white">about the task</span>
               </h2>
-              <form className="space-y-5 sm:space-y-6">
+              <form className="space-y-5 sm:space-y-6 text-black">
                 <div className="flex flex-col sm:flex-row gap-4">
                   <input
                     type="text"
                     name="firstName"
                     placeholder="First name"
-                    className="flex-1 bg-gray-200 border border-[#333] placeholder-gray-500 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
+                    className="flex-1 bg-gray-200 border border-[#333] placeholder-gray-500 text-black rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
                   />
                   <input
                     type="text"
                     name="lastName"
                     placeholder="Last name"
-                    className="flex-1 bg-gray-200 border border-[#333] placeholder-gray-500 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
+                    className="flex-1 bg-gray-200 border border-[#333] placeholder-gray-500 text-black rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
                   />
                 </div>
                 <input
                   type="email"
                   name="email"
                   placeholder="Email address"
-                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
+                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-black rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
                 />
                 <input
                   type="text"
                   name="company"
                   placeholder="Company"
-                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
+                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-black rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
                 />
                 <textarea
                   name="message"
                   placeholder="Your message"
                   rows="5"
-                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-white rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
+                  className="w-full bg-gray-200 border border-[#333] placeholder-gray-500 text-black rounded-lg px-4 py-3 focus:outline-none focus:border-pink-400 transition"
                 />
                 <button
                   type="submit"
